@@ -1,5 +1,3 @@
-package Third_Year;
-
 import java.util.Stack;
 
 public class QueenPlacement extends ChessPiece {

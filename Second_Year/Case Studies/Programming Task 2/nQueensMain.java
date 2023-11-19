@@ -1,8 +1,7 @@
-package Third_Year;
-
 import java.util.Stack;
 
 public class nQueensMain {
+
     public static void main(String[] args) {
         int n = 5; // You can change the value of n as needed
         solveNQueens(n);
@@ -56,7 +55,9 @@ public class nQueensMain {
                 return true;
             }
         }
+
         stack.push(currentChoice);
         return false;
+        
     }
 }
