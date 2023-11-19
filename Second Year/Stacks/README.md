@@ -2,5 +2,5 @@ __`Case Study`__
 
 # n-Queens Problem
 
-https://emabini.pup.edu.ph/pluginfile.php/511869/mod_assign/intro/image%20%281%29.png
 
+![image (1)](https://github.com/RastyFullStaxx/BSCS-Programming/assets/133841842/a7b2f875-2e77-4130-8811-8220092adafe)
