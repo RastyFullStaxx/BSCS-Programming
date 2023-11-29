@@ -28,7 +28,7 @@ public class activity5StacksNo1 {
 
         /*  Stack s' Current Visual:
          *                        -----
-         *               x    =   | 5 |
+         *       s.push(x)    =   | 5 |
          *                        -----       */
          // size = 1
 
@@ -37,7 +37,7 @@ public class activity5StacksNo1 {
          *                        -----
          *        (2 x y=3)   =   | 6 |
          *                        -----
-         *               x    =   | 5 |
+         *       s.push(x)    =   | 5 |
          *                        -----       */
          // size = 2
 
@@ -48,7 +48,7 @@ public class activity5StacksNo1 {
          *                        -----
          *        (2 x y=3)   =   | 6 |
          *                        -----
-         *               x    =   | 5 |
+         *       s.push(x)    =   | 5 |
          *                        -----       */
          // size = 3
           
@@ -61,7 +61,7 @@ public class activity5StacksNo1 {
          *                        -----
          *        (2 x y=3)   =   | 6 |
          *                        -----
-         *               x    =   | 5 |
+         *       s.push(x)    =   | 5 |
          *                        -----       */
          // size = 2
 
@@ -74,7 +74,7 @@ public class activity5StacksNo1 {
          *                        -----
          *       (2 x y=3)    =   | 6 |
          *                        -----
-         *               x    =   | 5 |
+         *       s.push(x)    =   | 5 |
          *                        -----       */
          // size = 3
 
