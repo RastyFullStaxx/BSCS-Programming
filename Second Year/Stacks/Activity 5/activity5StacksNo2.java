@@ -17,7 +17,7 @@ public class activity5StacksNo2 {
         // [2] Used for loop to assign values to stack S
         for (int i=10; i<50; i+=10) {
             S.push(i);
-            T = S;  // [2.1] Stack T and S was made to refer an identical stacl
+            T.push(i);  // [2.1] Stack T and S was made to refer an identical stacl
                     // Therefore, any changes that stack S would incur, would also affect Stack T. Vice versa 
         }
 
@@ -42,6 +42,12 @@ public class activity5StacksNo2 {
             R.push(a);      // [4.2] The variable a, pushed the popped value to stack R 
         }   
 
+        /*  Stack S/T Current Visual:              
+         *                 ----  
+         *    isEmpty     |   |
+         *                ----                 */
+         // size = null
+
         /*  Stack R' Current Visual:
          *                        -----
          *        4th loop    =   | 10 |
@@ -55,12 +61,12 @@ public class activity5StacksNo2 {
          // size = 4  
 
         // [5] Initialized variable 'n' with the value of 0, from T stack's size
-        int n = T.size(); /*  NOTE!: Since T and S are equalled to be the one stack of the same identity;
-                           * and that S already transferred all its value to R;
-                           * it's size is 0; the same way sa t. Therefore, n = 0 here; */
+        int n = T.size(); /* NOTE!: Since T and S are equalled to be one stack of the same identity and;
+                           * that S already transferred all its value to R, makings its size = null
+                           * Therefore, n is = null here; */
     
-        // [6] This line hoped to transfer the values of R and T, but T is already empty since stack S as was made empty 
-        for (int i = 0; i < n; i++) {   // [6.1] On top of that, n is set to 0 making this loop useless
+        // [6] This line hoped to transfer the values of R and T, but T is already empty since stack S as was made empty earlier
+        for (int i = 0; i < n; i++) {   // [6.1] On top of that, n is set to null unabling this loop to perform its operation
             a = R.pop();
             b = T.pop();
             System.out.println("R = " + a + " T = " + b);   // [6.2] a and b is null since the loop didn't function in the first place
@@ -72,14 +78,14 @@ public class activity5StacksNo2 {
     }
 }
 
-/* 
- * To correct this code, and actually print the expected outputs:
+/* To correct this code, and actually print the expected outputs:
  *      
- *                      R = 10 T = 40
- *                      R = 20 T = 30
- *                      R = 30 T = 20
- *                      R = 40 T = 10
+ *      R = 10 T = 40
+ *      R = 20 T = 30
+ *      R = 30 T = 20
+ *      R = 40 T = 10
  *      
  * Solution: Create stack T as a separate entity from stack S 
  *           by modifying the statement "T = S" found in line 20 with
- *           'T.push(i)'                                                */
+ *           'T.push(i)'
+ */
