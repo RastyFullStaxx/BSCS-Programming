@@ -17,7 +17,7 @@ public class activity5StacksNo2 {
         // [2] Used for loop to assign values to stack S
         for (int i=10; i<50; i+=10) {
             S.push(i);
-            T.push(i);  // [2.1] Stack T and S was made to refer an identical stacl
+            T = S;  // [2.1] Stack T and S was made to refer an identical stacl
                     // Therefore, any changes that stack S would incur, would also affect Stack T. Vice versa 
         }
 
@@ -73,7 +73,7 @@ public class activity5StacksNo2 {
         }
 
         System.out.println(" R T");
-        System.out.println("a and b along with n is set to null since the loop didn't function in the first place");
+        System.out.println("a and b along with n are set to null since the loop didn't function in the first place");
 
     }
 }
