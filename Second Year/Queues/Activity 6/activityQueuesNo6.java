@@ -153,7 +153,7 @@ public class activityQueuesNo6 {
     Queue<Integer> interMixedSequenceCdeq = new LinkedList<Integer>();
     Queue<Integer> interMixedSequenceDdeq = new LinkedList<Integer>();
 
-    // [A] Offer integers to the queue
+    // [A.1] Offer integers to the queue
     interMixedSequenceA.offer(0);
     interMixedSequenceA.offer(1);
     interMixedSequenceA.offer(2);
@@ -164,18 +164,17 @@ public class activityQueuesNo6 {
     interMixedSequenceA.offer(7);
     interMixedSequenceA.offer(8);
     interMixedSequenceA.offer(9);
-
-    // [A] Print the initial sequence
-    System.out.println("\na. Can be arranged\nInitial Sequence:  \t" + interMixedSequenceA);
-    // [A] Dequeue and enqueue to rearranger sequence from 0 to 9
-    System.out.println("Dequeued Sequence: \tUnnecessary");
-    System.out.println("Enqueued Sequence: \tUnnecessary");
-    // [A] Print final sequence 
-    System.out.println("Final Sequence:    \t" + interMixedSequenceA);
+    // [A.2] Print the initial sequence
+        System.out.println("\na. Can be arranged\nInitial Sequence:  \t" + interMixedSequenceA);
+    // [A.3] Dequeue and enqueue to rearranger sequence from 0 to 9
+        System.out.println("Dequeued Sequence: \tUnnecessary");
+        System.out.println("Enqueued Sequence: \tUnnecessary");
+    // [A.4] Print final sequence 
+        System.out.println("Final Sequence:    \t" + interMixedSequenceA);
 
             System.out.println();
 
-    // [B] Offer integers to the queue
+    // [B.1] Offer integers to the queue
     interMixedSequenceB.offer(4);
     interMixedSequenceB.offer(6);
     interMixedSequenceB.offer(8);
@@ -186,10 +185,9 @@ public class activityQueuesNo6 {
     interMixedSequenceB.offer(9);
     interMixedSequenceB.offer(0);
     interMixedSequenceB.offer(1);
-
-    // [B] Print the initial sequence
-    System.out.println("b. Can be arranged\nInitial Sequence:  \t"+ interMixedSequenceB);
-    // [B] Dequeue the values needed to be returned
+    // [B.2] Print the initial sequence
+        System.out.println("b. Can be arranged\nInitial Sequence:  \t"+ interMixedSequenceB);
+    // [B.3] Dequeue the values needed to be returned
     interMixedSequenceB.poll();
     interMixedSequenceB.poll();
     interMixedSequenceB.poll();
@@ -199,7 +197,7 @@ public class activityQueuesNo6 {
     interMixedSequenceB.poll();
     interMixedSequenceB.poll();
         System.out.println("Dequeued Sequence: \t"+ interMixedSequenceB);   // = 4, 6, 8, 7, 5, 3, 2, 9
-    // [B] Enqueque to return the arranged values
+    // [B.4] Enqueque to return the arranged values
     interMixedSequenceBdeq.offer(2);
     interMixedSequenceBdeq.offer(3);
     interMixedSequenceBdeq.offer(4);
@@ -212,7 +210,7 @@ public class activityQueuesNo6 {
 
             System.out.println();
 
-    // [C] Offer integers to the queue
+    // [C.1] Offer integers to the queue
     interMixedSequenceC.offer(2);
     interMixedSequenceC.offer(5);
     interMixedSequenceC.offer(6);
@@ -223,10 +221,9 @@ public class activityQueuesNo6 {
     interMixedSequenceC.offer(3);
     interMixedSequenceC.offer(1);
     interMixedSequenceC.offer(0);
-
-    // [C] Print the initial sequence
-    System.out.println("c. Can be arranged\nInitial Sequence:  \t"+ interMixedSequenceC);
-    // [B] Dequeue the values needed to be returned
+    // [C.2] Print the initial sequence
+        System.out.println("c. Can be arranged\nInitial Sequence:  \t"+ interMixedSequenceC);
+    // [C.3] Dequeue the values needed to be returned
     interMixedSequenceC.poll();
     interMixedSequenceC.poll();
     interMixedSequenceC.poll();
@@ -237,7 +234,7 @@ public class activityQueuesNo6 {
     interMixedSequenceC.poll();
     interMixedSequenceC.poll();
         System.out.println("Dequeued Sequence: \t"+ interMixedSequenceC);   //  = 2, 5, 6, 7, 4, 8, 9, 3, 1
-    // [B] Enqueque to return the arranged values
+    // [C.4] Enqueque to return the arranged values
     interMixedSequenceCdeq.offer(1);
     interMixedSequenceCdeq.offer(2);
     interMixedSequenceCdeq.offer(3);
@@ -251,7 +248,7 @@ public class activityQueuesNo6 {
 
               System.out.println();
 
-    // [D] Offer integers to the queue D
+    // [D.1] Offer integers to the queue D
     interMixedSequenceD.offer(4);
     interMixedSequenceD.offer(3);
     interMixedSequenceD.offer(2);
@@ -262,14 +259,15 @@ public class activityQueuesNo6 {
     interMixedSequenceD.offer(7);
     interMixedSequenceD.offer(8);
     interMixedSequenceD.offer(9);
+    // [D.2] Print the initial sequence
         System.out.println("d. Cannot arranged\nInitial Sequence:  \t"+ interMixedSequenceD);
-    // [D] Dequeue the values needed to be returned
+    // [D.3] Dequeue the values needed to be returned
     interMixedSequenceD.poll();
     interMixedSequenceD.poll();
     interMixedSequenceD.poll();
     interMixedSequenceD.poll();
         System.out.println("Dequeued Sequence: \t"+ interMixedSequenceD);   // = 4, 3, 2, 1, || 5, 6, 7, 8 , 9
-    // [D] Dequeue the values needed to be returned
+    // [D.4] Dequeue the values needed to be returned
     interMixedSequenceDdeq.offer(1);
     interMixedSequenceDdeq.offer(2);
     interMixedSequenceDdeq.offer(3);
