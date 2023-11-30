@@ -20,7 +20,7 @@ public class activity5StacksNo1 {
         Stack<Integer> s = new Stack<>();   // Since I'll be applying string methods, I'll use the wrapper class of int (e.i., Integer)
 
         // [2] Initialize 2 variables I'll be pushing into the stack
-        int x = 5; 
+        int x = 2; 
         int y = 3;
 
         // [3] Push x and y variables into the stack [ using: push(variablename) ]
@@ -28,7 +28,7 @@ public class activity5StacksNo1 {
 
         /*  Stack s' Current Visual:
          *                        -----
-         *       s.push(x)    =   | 5 |
+         *       s.push(x)    =   | 2 |
          *                        -----       */
          // size = 1
 
@@ -37,7 +37,7 @@ public class activity5StacksNo1 {
          *                        -----
          *        (2 x y=3)   =   | 6 |
          *                        -----
-         *       s.push(x)    =   | 5 |
+         *       s.push(x)    =   | 2 |
          *                        -----       */
          // size = 2
 
@@ -48,7 +48,7 @@ public class activity5StacksNo1 {
          *                        -----
          *        (2 x y=3)   =   | 6 |
          *                        -----
-         *       s.push(x)    =   | 5 |
+         *       s.push(x)    =   | 2 |
          *                        -----       */
          // size = 3
           
@@ -61,7 +61,7 @@ public class activity5StacksNo1 {
          *                        -----
          *        (2 x y=3)   =   | 6 |
          *                        -----
-         *       s.push(x)    =   | 5 |
+         *       s.push(x)    =   | 2 |
          *                        -----       */
          // size = 2
 
@@ -74,7 +74,7 @@ public class activity5StacksNo1 {
          *                        -----
          *       (2 x y=3)    =   | 6 |
          *                        -----
-         *       s.push(x)    =   | 5 |
+         *       s.push(x)    =   | 2 |
          *                        -----       */
          // size = 3
 
@@ -85,7 +85,7 @@ public class activity5StacksNo1 {
          *                        -----
          *       (2 x y=3)    =   | 6 |
          *                        -----
-         *       s.push(x)    =   | 5 |
+         *       s.push(x)    =   | 2 |
          *                        -----       */
         // size = 2
 
@@ -102,7 +102,7 @@ public class activity5StacksNo1 {
          *                        -----
          *       (2 x y=3)    =   | 6 |
          *                        -----
-         *       s.push(x)    =   | 5 |
+         *       s.push(x)    =   | 2 |
          *                        -----       */
          // size = 2
 
@@ -122,7 +122,7 @@ public class activity5StacksNo1 {
          *                        -----
          *       (2 x y=3)    =   | 6 |
          *                        -----
-         *       s.push(x)    =   | 5 |
+         *       s.push(x)    =   | 2 |
          *                        -----       */
          // size = 4       
 
@@ -130,7 +130,7 @@ public class activity5StacksNo1 {
         System.out.println("\tPrinting the values from Stack s\n");
         while (!s.isEmpty()) {  // [9.1] As long as the a value is found inside a stack space
             y = s.pop();    // [9.2] A value on top would be removed--assigned to y, and then be;       
-            System.out.println("\t\t\t" + y);  // [9.3] Printed: 2, 2, 6, 5 respectively
+            System.out.println("\t\t\t" + y);  // [9.3] Printed: 2, 2, 6, 2 respectively
         } System.out.println();
 
         // [10] Print the final value of x
