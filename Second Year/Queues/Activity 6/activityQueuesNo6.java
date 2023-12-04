@@ -1,3 +1,4 @@
+package Java.DataStrucAlgo.Queues;
 import java.util.Queue;             // [0] Import the queues library
 import java.util.LinkedList;        // [0] Import the LinkedList library prior to the activity requirements
 
@@ -137,7 +138,8 @@ public class activityQueuesNo6 {
     // [14] Print the final sequence 
     System.out.print("     ");
     System.out.print(easyQuestion);
-    System.out.print(" = All Elements were polled out by the end\n\n");
+    System.out.print(" = All Elements were polled out by the end");
+    System.out.println("\n\tReturn Dequeued Elements: EASYQUESTION\n\n");
 
     // =================================================================== Number 3 =================================================================== // 
     
@@ -260,7 +262,7 @@ public class activityQueuesNo6 {
     interMixedSequenceD.offer(8);
     interMixedSequenceD.offer(9);
     // [D.2] Print the initial sequence
-        System.out.println("d. Cannot arranged\nInitial Sequence:  \t"+ interMixedSequenceD);
+        System.out.println("d. Cannot be arranged\nInitial Sequence:  \t"+ interMixedSequenceD);
     // [D.3] Dequeue the values needed to be returned
     interMixedSequenceD.poll();
     interMixedSequenceD.poll();
@@ -279,7 +281,7 @@ public class activityQueuesNo6 {
     System.out.println();
     }
 
-    static void lineBreak() {
+    public static void lineBreak() {
         System.out.println("=======================================================");
     }
 
