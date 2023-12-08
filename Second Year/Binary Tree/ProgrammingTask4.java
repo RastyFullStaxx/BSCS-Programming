@@ -53,85 +53,56 @@ public class ProgrammingTask4 {
         root.right.right.right = new TreeNode('J');
 
         // [12] Print the output
-        line();
-        System.out.println("\t\t OUTPUT");
-        line();
-        System.out.println("       Node   L-Subtree    R-Subtree\n");
-        printOutputs(root);
-        line();
+        line(); System.out.println("\t\t OUTPUT"); line();
+        System.out.println("\tNode   L-Subtree    R-Subtree\n"); //[note] Since we can't print a null value, we explicitly print the String null instead
+        System.out.println("\t " + root.data + "\t   " + root.left.data + "\t\t" + root.right.data);
+        System.out.println("\t " + root.left.data + "\t   " + root.left.left.data + "\t\t" + "null");
+        System.out.println("\t " + root.left.left.data + "\t   " + "null" + "\t\t" + root.left.left.right.data);
+        System.out.println("\t " + root.right.data + "\t   " + root.right.left.data + "\t\t" + root.right.right.data);
+        System.out.println("\t " + root.right.left.data + "\t   " + "null" + "\t\t" + root.right.left.right.data);
+        System.out.println("\t " + root.right.right.data + "\t   " + root.right.right.left.data + "\t\t" + root.right.right.right.data); line();
 
         // [13] [Print the Root]
-        System.out.println("Root of the Tree     : " + root.data);
-        line();
+        System.out.println("Root of the Tree     : " + root.data); line();
 
         // [14] Print traversals
         System.out.print("Preorder Traversal   : ");
         printPreorder(root);
-
-        System.out.print("\nInorder Traversal    : ");
-        printInorder(root);
-
-        System.out.print("\nPost Order Traversal : ");
-        printPostorder(root);
-        System.out.println();
-        line();
+            System.out.print("\nInorder Traversal    : ");
+            printInorder(root);
+                System.out.print("\nPost Order Traversal : ");
+                printPostorder(root);
+        System.out.println(); line();
     }
 
-    // [15] Method to print information about the nodes in the tree
-    static void printOutputs(TreeNode node) {
-        if (node != null) {
-
-            // [16] Print current node
-            System.out.print("\t" + node.data + "\t");
-
-            // [17] Print left subtree
-            if (node.left != null) {
-                System.out.print(node.left.data + " ");
-            } else {
-                System.out.print("null");
-            }
-
-            // [18] Print right subtree
-            if (node.right != null) {
-                System.out.println("\t     " + node.right.data);
-            } else {
-                System.out.println("\t     null");
-            }
-
-            // [19] Print left and right subtrees for specific nodes
-            printOutputs(node.left);
-            printOutputs(node.right);
-        }
-    }
-
-    // [20] Method to print preorder traversal of the tree
+    // [15] Recursion method to print preorder traversal of the tree (Root > Left > Right)
     static void printPreorder(TreeNode node) {
         if (node != null) {
-            System.out.print(node.data + " ");
-            printPreorder(node.left);
-            printPreorder(node.right);
+            System.out.print(node.data + " ");  // [15.1] Print the Root 
+            printPreorder(node.left); // [15.2] Recursion to point and print left child
+            printPreorder(node.right); // [15.3] Recursion to point and print right child; then goes back to print another parent
         }
     }
 
-    // [21] Method to print inorder traversal of the tree
+    // [16] Recursion method to print inorder traversal of the tree (Left > Root > Right)
     static void printInorder(TreeNode node) {
-        if (node != null) {
-            printInorder(node.left);
-            System.out.print(node.data + " ");
-            printInorder(node.right);
+        if (node != null) { 
+            printInorder(node.left); // [16.1] Recursion to point and print the left most descendant
+            System.out.print(node.data + " "); // [16.2] Recursion to print root
+            printInorder(node.right); // [16.2] Recursion to point and print right node; then goes back to point and print another left most descendant
         }
     }
 
-    // [22] Method to print postorder traversal of the tree
+    // [17] Recursion method to print postorder traversal of the tree (Left > Right > Root)
     static void printPostorder(TreeNode node) {
         if (node != null) {
-            printPostorder(node.left);
-            printPostorder(node.right);
-            System.out.print(node.data + " ");
+            printPostorder(node.left); // [17.1] Recursion to point and print the right most descendant
+            printPostorder(node.right); // [17.2] Recursion to point and print left node
+            System.out.print(node.data + " "); // [17.3] Print the root; then goes back to point and print another right most descendant
         }
     }
 
-    // [23] Method to print a separator line
+    // [18] Method to print a separator line
     public static void line() {
         System.out.println("==========================================");
     }
